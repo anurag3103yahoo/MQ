@@ -1,23 +1,29 @@
 
 ===================Queue Commands =========================================
+Define QLocal(queuename)
+Define QLocal(queuename) Usage(Xmitq)
 
-Define QLocal(Queue-name)..
-Define QLocal(Queue-Name) Usage(Xmitq)
-Define QAlias(Queue-Name) Target(Target-Queue-Name)..
-Define QRemote(Queue-Nmae) RName(Target-Queue_Name) RQMName(Target-QMGR-Name) Xmitq(Xmitq-Name)
-Define QModel(Queue_name) Deftype(Tempdyn/PermDyn) ..
-Display QLocal(Queue-Name)
-Display Qstatus(Queue-Name)
-Display QLocal(Queue-Name) Usage
-Display QAlias(Queue-Name)
-Display QRemote(Queue-Name) All
-Display QModel(Queue-Name)
-Alter QLocal(Queue-name) Maxdepth(10000) Maxmsgl(1024(bytes)) ..
-Alter QRemote(Queue-Name) Rname(…) RQMName(….) Xmitq(…) …
-Alter QModel(Queue-Name) Deftype(TempDyn/PermDyn) ….
-Alter QAlias(Queue_Name) Target(….) …
-Delete QLocal(Queue-Name)
-Delete QAlias(Queue-Nmae)
-Delete QRemote(Queue-Name)
-Delete QModel(Queue-Name)
-Clear QLocal(Queue-Name)
+Define QAlias(queuename) Target(Targetqueuename)
+
+Define QRemote(queueNmae) RName(TargetQueueName) RQMName(TargetQMGRName) Xmitq(XmitqName)
+
+Define QModel(queuename) Deftype(PermDyn)
+
+Display QLocal(queuename)
+Display Qstatus(queuename)
+Display QLocal(queuename) Usage
+Display QAlias(queuename)
+Display QRemote(queuename) All
+Display QModel(queuename)
+
+Alter QLocal(queuename) Maxdepth(10000) Maxmsgl(1024(bytes))
+Alter QRemote(queuename) Rname(TargetQueueName) RQMName(TargetQMGRName) Xmitq(XmitqName)
+Alter QModel(queuename) Deftype(PermDyn)
+Alter QAlias(queueName) Target(a)
+
+Delete QLocal(queuename)
+Delete QAlias(queueNmae)
+Delete QRemote(queuename)
+Delete QModel(queuename)
+
+Clear QLocal(queuename)
